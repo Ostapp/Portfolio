@@ -1,0 +1,15 @@
+datetime
+
+dtm = datetime.datetime.now() - time now 
+
+dtmUTC = datetime.datetime.utcnow() - UTC time now
+
+str(dtm) - converts to string, but on different machines it looks differently
+
+dtm.isoformat() - to make it in universal format
+isoformat is needed when there is a need to communicate between machines
+
+local time is not good, because it has time zone and winter/summer time
+ 
+UTC - Universal Time Coordinated, 0 tiemzone, no daylight saving time - solves that problem
+
