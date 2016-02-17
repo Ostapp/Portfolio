@@ -1,0 +1,23 @@
+def freq_words(list_words):
+
+    each_word = []
+
+    list_words6 = [each_word]
+
+    for word in list_words:
+        for item in list_words6:
+            if word in item:
+                list_words6.remove(item)
+                item.append(word)
+                list_words6.append(item)
+            elif word not in item:
+                if list_words6.index(item) == len(list_words6)-1:
+                    each_word.append(word)
+                    list_words6.append(each_word)
+                    each_word = []
+            else: continue
+
+    return list_words6
+
+
+        
